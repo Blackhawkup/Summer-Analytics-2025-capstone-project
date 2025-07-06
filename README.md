@@ -34,9 +34,9 @@ This project simulates a **dynamic pricing engine** that adjusts prices based on
 
 ## 🧱 System Architecture
 
-<!-- Paste Diagram Below This Line -->
-![Architecture Diagram](path/to/your/diagram.png)
-<!-- Paste Diagram Above This Line -->
+
+![Architecture Diagram](./architecture_diagram.png)
+
 
 ---
 
@@ -51,9 +51,9 @@ This project simulates a **dynamic pricing engine** that adjusts prices based on
 
 ### 🔹 Model 2: Demand-Based Pricing
 
-Demand is calculated using multiple weighted features:
-demand = α1*(occupancy/capacity) + α2queue - α3traffic + α4special_day + α5vehicle_type
-price = base_price × (1 + scaler × normalized_demand)
+>`Demand is calculated using multiple weighted features:`
+>`demand = α1*(occupancy/capacity) + α2queue - α3traffic + α4special_day + α5vehicle_type`
+>`price = base_price × (1 + scaler × normalized_demand)`
 ---
 
 ### 🔹 Model 3: Competitive Pricing (Final Output)
@@ -73,11 +73,6 @@ price = base_price × (1 + scaler × normalized_demand)
 | `demand`        | Calculated demand score              |
 | `model2_price`  | Model 2 dynamic price                |
 | `model3_price`  | Final price after competitive logic  |
-
----
-
-## 📂 Folder Structure
-
 
 ---
 
